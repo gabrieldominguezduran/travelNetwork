@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- awesome fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+   
+    <title>Travel Finder</title>
+  </head>
+  <body>
+ 
+
+      <!--nav menu -->
+
+        <nav>
+   
+          <h1 class="title">Travel Finder</h1>
+
+
+          <!--modal sig in form  -->
+          <!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Modal cascading tabs-->
+      <div class="modal-c-tabs">
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">
+              Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">
+              Register</a>
+          </li>
+        </ul>
+
+        <!-- Tab panels -->
+        <div class="tab-content">
+          <!--Panel 7-->
+          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body mb-1">
+              <div class="md-form form-sm mb-5">
+                <input type="email" id="modalLRInput10" class="form-control form-control-m validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput10">Email</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                <input type="password" id="modalLRInput11" class="form-control form-control-m validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput11">Password</label>
+              </div>
+              <div class="text-center mt-2">
+                <button class="btn btn-info">Log in </button>
+              </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-center text-md-right mt-1">
+                <p>Not a member? <a href="#" class="text-secondary">Sign Up</a></p>
+                <p>Forgot <a href="#" class="text-secondary">Password?</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+
+          </div>
+          <!--/.Panel 7-->
+
+          <!--Panel 8-->
+          <div class="tab-pane fade" id="panel8" role="tabpanel">
+
+            <!--Body-->
+            <div class="modal-body">
+              <div class="md-form form-sm mb-5">
+                
+                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+              </div>
+
+              <div class="md-form form-sm mb-5">
+                
+                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+              </div>
+
+              <div class="md-form form-sm mb-4">
+                
+                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+              </div>
+
+              <div class="text-center form-sm mt-2">
+                <button class="btn btn-info">Sign up</button>
+              </div>
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+              <div class="options text-right">
+                <p class="pt-1">Already have an account? <a href="#" class="text-secondary">Log In</a></p>
+              </div>
+              <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <!--/.Panel 8-->
+        </div>
+
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: Login / Register Form-->
+
+<div class="text-center mt-4">
+  <a href="" class="btn btn-dark btn-rounded my-2" data-toggle="modal" data-target="#modalLRForm">Login / Register</a>
+</div>
+      
+           
+
+        </nav>
+    
+
+      <!--hero header-->
+     
+        <figure class="hero_img">
+          <img src="img/montain.jpg" alt="montain img">
+        </figure>
+
+
+<!--input form-->
+      <div class="form">
+
+        <form class="flex-form">
+      
+          <input type="search" placeholder="Where do you want to go?">
+          
+          <label>From</label>
+          <input type="date" name="from">
+    
+          <label>To</label>
+          <input type="date" name="to">
+
+         
+          <img class="icon" src="img/ppl.svg" alt="ppl icon">
+          <select>
+            
+            <option value="1"></option>
+            <option value="2">1 Person</option>
+            <option value="3">2 Persons</option>
+            <option value="4">3 Persons</option>
+            <option value="5">4 Persons</option>
+            <option value="6">5 Persons</option>
+            <option value="7">More...</option>
+          </select>
+    
+          <input type="submit" value="Search">
+    
+        </form>
+      </div>
+
+
+    </div>
+    <!-- header-wrapper end -->
+    
+      <!-- main-wrapper -->
+      <div class="main-wrapper">
+
+ <!--img-->
+      <div class="img-1">
+          <figure>
+              <img src="img/forest.jpg" alt="Forest photo">
+            </figure>
+      </div>
+      <!--text-->
+      <div class="text">
+        <h2>Connect with other people like you and start the travel adventure!</h2>
+        <p>Organize the adventure you always want it, decide where and when and post it on your personal page, or start searching in other people feeds.....Make the dream come true!</p>
+
+      </div>
+      
+      <!--img-->
+      <div class="img-2">
+        <figure>
+          <img src="img/lake.jpg" alt="Lake photo">
+        </figure>
+      </div>
+      <div class="text2">
+        <h2>Check out the last travels that has been organize from people just like you....</h2>
+        
+      </div>
+
+      </div>
+      <!-- main-wrapper end -->
+
+      <div class="gallery">
+          <div class="gallery-item1">
+            <img src="img/balloon.jpg" alt="fly hot air balloon">
+            <p>See the sunrise in Cappadocia on a weekend hot air balloon trip!</p>
+          </div>
+          <div class="gallery-item2">
+              <img src="img/surf.jpg" alt="people on the beach">
+              <p>Learn to surf in Fuerteventura, 5 days special trip!</p>
+          </div>
+          <div class="gallery-item3">
+              <img src="img/skiing.jpg" alt="people skiing">
+              <p>Spend the weekend skiing in the swiss alps!</p>
+          </div>
+          <div class="gallery-item4">
+            <img src="img/desert.jpg" alt="Photo of the desert">
+            <p>Sleeping under the stars in the Sahara desert on this weeklong adventure!</p>
+        </div>
+
+      </div>
+      
+     
+
+      <!--footer-->
+      <footer>
+        <ul>
+          <li><a href=""></a>About</li>
+          <li><a href=""></a>Contact</li>
+          <li><a href=""></a>FAQ</li>
+        </ul>
+        <p>TF</p>
+      </footer>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
