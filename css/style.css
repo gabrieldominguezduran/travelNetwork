@@ -260,7 +260,19 @@ html {
     list-style-type: none;
     text-align: left;
     font-size: 1em;
-    /* padding: 10px; */
+    
+    
+  }
+
+  footer li a{
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+  footer  li a:hover{
+    color: #401613;
+    text-decoration: none;
+
 
   }
 
@@ -279,6 +291,20 @@ html {
   footer p::first-letter{
     font-size: 2em;
   }
+
+  .headdingtxt {
+
+    font-size: 5em;
+    color: #401613;
+    text-align: center;
+  }
+
+  .abouttxt {
+    font-size: 1.5em;
+    padding: 50px;
+    color: #401613;
+  }
+
 
   @media (min-width:600px){
 
@@ -343,6 +369,19 @@ html {
     footer li {
       display: inline-flex;
       padding: 20px;
+      text-decoration: none;
+    }
+
+    footer li a{
+      color: antiquewhite;
+      text-decoration: none;
+    }
+
+    footer  li a:hover{
+      color: #401613;
+      text-decoration: none;
+
+  
     }
 
     footer p {
@@ -354,6 +393,20 @@ html {
      width: 50%;
      justify-self: center;
      }
+
+     .headdingtxt {
+
+      font-size: 7em;
+      color: #401613;
+      text-align: center;
+    }
+  
+    .abouttxt {
+      font-size: 2em;
+      padding: 50px;
+      color: #401613;
+    }
+  
 
 
     }
@@ -583,12 +636,34 @@ html {
     font-size: 1.5em;
   }
 
-  footer li {
+  footer  li a {
     display: inline-flex;
     margin: 40px 20px;
     padding: 20px;
+    color: antiquewhite;
+    text-decoration: none;
   }
 
+  footer  li a:hover{
+    color: #401613;
+    text-decoration: none;
+
+  }
+
+  
+
+  .headdingtxt {
+
+    font-size: 10em;
+    color: #401613;
+    text-align: center;
+  }
+
+  .abouttxt {
+    font-size: 3em;
+    padding: 50px;
+    color: #401613;
+  }
 
 
   }
