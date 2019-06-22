@@ -8,25 +8,21 @@ html {
   
   body {
   
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;   
+  
   }
 /* header */
 
  h1 {
-      font-family: 'Amatic SC', cursive;
-      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
       font-size: 2em;
       font-weight: 500;
       color: whitesmoke;
   
       
   }
-
-  h1::first-letter{
-      font-size: 2.5em;
-  }
-  
+ 
 
   nav{
       display: flex;
@@ -171,14 +167,13 @@ html {
    grid-column: 1 / 3;
    font-size: 1em;
    padding: 20px;
-   font-family: 'Francis One', sans-serif;
+   font-family: 'Poppins', sans-serif;
    
  }
 
  figcaption {
    width: 40%;
    font-size: 0.7em;
-   text-align: center;
    border-radius: 20px;
    margin-left: 40px;
    border: 2px solid #401613;
@@ -195,30 +190,20 @@ html {
   /* text body */
 
   h2 {
-      font-size: 2em;
-      font-weight: 500;
-      text-align: center;
-      letter-spacing: 0.3em;
-      line-height: 1.5em;
-      padding: 10px;
+      font-size: 1.5em;    
+      line-height: normal;
+      margin: 20px;
+      padding: 20px;
   }
 
-  h2::first-letter{
-    font-size: 2em;
-  }
 
   p {
-    font-size: 1em;
-    font-weight: 700;
-    line-height: 1.5em;
-    text-align: justify;
-    margin: 20px 20px 
+    font-size: 1.5em; 
+    line-height: normal;
+    margin: 20px;
+    padding: 20px;
   }
 
- .text p::first-letter {
-    text-transform: uppercase;
-    font-size: 2em;
-  }
 
   /* gallery */
 
@@ -248,20 +233,18 @@ html {
     color: whitesmoke;
     padding: 20px;
     margin-top: -20px;
-  }
-
-  footer {
     display: flex;
     justify-content:space-between;
+    align-content: flex-end;
+    flex-shrink: 0;
+    
   }
   
   footer li  {
     
     list-style-type: none;
     text-align: left;
-    font-size: 1em;
-    
-    
+    font-size: 1em;  
   }
 
   footer li a{
@@ -278,31 +261,29 @@ html {
 
   
   footer p {
-    font-family: 'Amatic SC', cursive;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
     font-size: 3em;
-    font-weight: 500;
     color: whitesmoke;
     text-align: center;
     
 
   }
 
-  footer p::first-letter{
-    font-size: 2em;
-  }
+  
 
   .headdingtxt {
 
-    font-size: 5em;
+    font-size: 3em;
     color: #401613;
+    margin-top: 100px;
     text-align: center;
   }
 
   .abouttxt {
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 50px;
     color: #401613;
+    margin-bottom: 179px;
   }
 
 
@@ -332,19 +313,18 @@ html {
     }
 
     .text-profile {
-      font-family: 'Francis One', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
 
 
     h2{
-      font-size: 2.5em;
-      line-height: 2em;;
+      font-size: 1.5em;
+      line-height: normal;
     }
 
     p{
       font-size: 1.5em;
-      letter-spacing:0.3em;
-      line-height: 1.8em;
+      letter-spacing:normal;
     }
 
     .gallery{
@@ -364,6 +344,9 @@ html {
       font-size: 1.5em;
       display: flex;
       justify-content: space-between;
+      align-self: flex-end;
+      justify-self: flex-end;
+      flex-shrink: 0;
     }
 
     footer li {
@@ -396,13 +379,13 @@ html {
 
      .headdingtxt {
 
-      font-size: 7em;
+      font-size: 3em;
       color: #401613;
       text-align: center;
     }
   
     .abouttxt {
-      font-size: 2em;
+      font-size: 1em;
       padding: 50px;
       color: #401613;
     }
@@ -438,10 +421,10 @@ html {
     .text-profile {
       grid-column: 2 / 3;
       grid-row: 1 / 3;
-      font-family: 'Francis One', sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 1em;
       padding: 10px;
-      text-align: justify;
+     
     }
 
     #badge {
@@ -473,7 +456,7 @@ html {
       color: whitesmoke;
       position: absolute;
       width: 500px;
-      top: 200px;
+      top: 150px;
       right: 10%;
       z-index: 3;
       margin: 30px;
@@ -498,30 +481,32 @@ html {
   }
 
   .text {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: rgba(0, 0, 0, 0.8);
     color: whitesmoke;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
     height: 300px;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
    
   }
 
   .text h2 {
-    font-size: 2.5em;
-    line-height: 1.5em;
-    margin: 0 40px;
+    font-size: 2em;
+    margin: 20px;
+    line-height: normal;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     
   }
 
   .text p {
-    text-transform: lowercase;
+    
     font-size: 1.5em;
-    line-height: 1.5em;
-    letter-spacing: 0.3em;
-    text-align: center;
     margin: 20px;
-    padding: 10px;
+    line-height: normal;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2
   }
 
   .img-2 {
@@ -539,25 +524,21 @@ html {
   
   }
 
-  .img-1 img, .img-2 img {
-    border-radius: 1px;
-  }
+  
 
   .text2{
     display: grid;
     grid-column: 1 / 3;
     grid-row: 3 / 4;
     font-size: 1em;
-    margin: 0 20px;
+    margin: 0 80px;
   }
 
   .text2 h2 {
     padding: 30px;
   }
 
-  .text2 h2::first-letter{
-    font-size: 3em;
-  }
+  
 
   .users p {
     font-size: 1.3em;
@@ -568,13 +549,11 @@ html {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-gap: 20px;
-    background: rgba(0, 0, 0, 0.1);
+    
   }
 
   .gallery-item1 img {
-    width: 100%;
-    border-radius: 20px;
-    
+    width: 100%; 
   }
 
   .gallery-item1 {
@@ -587,7 +566,6 @@ html {
 
   .gallery-item2 img {
     width: 100%;
-    border-radius: 20px;
   }
 
   
@@ -600,7 +578,6 @@ html {
 
   .gallery-item3 img {
     width: 100%;
-    border-radius: 20px;
   }
 
   
@@ -613,7 +590,6 @@ html {
 
   .gallery-item4 img {
     width: 100%;
-    border-radius: 20px;
   }
 
   
@@ -625,7 +601,7 @@ html {
   }
 
   .gallery p {
-    font-size:2em;
+    font-size:1.5em;
     text-align: center;
   }
   
@@ -634,6 +610,10 @@ html {
     display: flex;
     justify-content: space-around;
     font-size: 1.5em;
+    justify-self: flex-end;
+    align-self: flex-end;
+    flex-shrink: 0;
+    margin-top: 68px;
   }
 
   footer  li a {
@@ -654,13 +634,14 @@ html {
 
   .headdingtxt {
 
-    font-size: 10em;
+    font-size: 5em;
     color: #401613;
     text-align: center;
   }
 
   .abouttxt {
-    font-size: 3em;
+    font-size: 1.5em;
+    margin: 0 300px 40px;
     padding: 50px;
     color: #401613;
   }
