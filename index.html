@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- css stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- awesome fonts -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/validate.css">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
     
@@ -41,11 +40,11 @@
         <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
           <li class="nav-item">
             <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">
-              Login</a>
+              Sign in</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">
-              Register</a>
+              Sign up</a>
           </li>
         </ul>
 
@@ -55,65 +54,80 @@
           <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
             <!--Body-->
-            <div class="modal-body mb-1">
-              <div class="md-form form-sm mb-5">
-                <input type="email" id="modalLRInput10" class="form-control form-control-m validate">
-                <label data-error="wrong" data-success="right" for="modalLRInput10">Email</label>
+         
+              <div class="modal-body mb-4">
+                <div class="md-form form-sm mb-4 mt-4">
+                  <input type="email"  class="form-control form-control-m input" name="email" placeholder="Iam@dog.io">
+                  <p>Not a valid email!!</p>
+                </div>
+               
+  
+                <div class="md-form form-sm mb-2">
+                  <input type="password" class="form-control form-control-m input" name="password" placeholder="********">
+                  <p>Upsss wrong password!</p>
+                </div>
+                <div class="text-center mt-2">
+                  <button type="submit" class="btn btn-info btnIn">Sign in</button>
+                  
+                </div>
               </div>
-
-              <div class="md-form form-sm mb-4">
-                <input type="password" id="modalLRInput11" class="form-control form-control-m validate">
-                <label data-error="wrong" data-success="right" for="modalLRInput11">Password</label>
+              <!--Footer-->
+              <div class="modal-footer">
+                <div class="options text-center text-md-right mt-1">
+                </div>
+                <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
               </div>
-              <div class="text-center mt-2">
-                <a href="users.html" class="btn btn-info">Log in </a>
-              </div>
+  
             </div>
-            <!--Footer-->
-            <div class="modal-footer">
-              <div class="options text-center text-md-right mt-1">
-                <p>Not a member? <a href="#panel8" class="text-secondary">Sign Up</a></p>
-                <p>Forgot <a href="#" class="text-secondary">Password?</a></p>
-              </div>
-              <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
-            </div>
-
-          </div>
           <!--/.Panel 7-->
 
           <!--Panel 8-->
           <div class="tab-pane fade" id="panel8" role="tabpanel">
 
             <!--Body-->
+            <form class="needs-validation" novalidate>
             <div class="modal-body">
-              <div class="md-form form-sm mb-5">
+              <div class="md-form form-sm mb-5 mt-4">
                 
-                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
-                <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+                <input class="form-control form-control-m email" id="validationCustom01" type="text" name="email" pattern="^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$" placeholder="Email" required>
+                <div class="valid-feedback">
+                  Looking good!!!!
+                </div>
+                <div class="invalid-feedback">
+                  Please choose a valid email.
+                </div>
               </div>
 
               <div class="md-form form-sm mb-5">
                 
-                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
-                <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+                <input class="form-control form-control-m pass1" id="validationCustom02" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required>
+                <div class="valid-feedback">
+                  Almost there!!!
+                </div>
+                <div class="invalid-feedback">
+                  Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.
+                </div>
               </div>
 
-              <div class="md-form form-sm mb-4">
+              <div class="md-form form-sm mb-5">
                 
-                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
-                <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+                <input class="form-control form-control-m pass2" id="validationCustom03" type="password" name="password2" placeholder="Repeat password" required>
+                <div class="valid-feedback">
+                  Perfect!!!!
+                </div>
+                <div class="invalid-feedback">
+                  Passwords must match!
+                </div>
               </div>
 
               <div class="text-center form-sm mt-2">
-                <button class="btn btn-info">Sign up</button>
+                <button class="btn btn-info signUp">Sign up</button>
               </div>
-
+              
             </div>
+          </form>
             <!--Modal Footer-->
             <div class="modal-footer">
-              <div class="options text-right">
-                <p class="pt-1">Already a member? <a href="#panel7" class="text-secondary">Log In</a></p>
-              </div>
               <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
             </div>
           </div>
@@ -125,10 +139,11 @@
     <!--/.Content-->
   </div>
 </div>
+
 <!--Modal: Login / Register Form-->
 
 <div class="text-center mt-4">
-  <a href="" class="btn btn-dark btn-rounded my-2" data-toggle="modal" data-target="#modalLRForm">Login / Register</a>
+  <a href="" class="btn btn-dark btn-rounded my-2" data-toggle="modal" data-target="#modalLRForm">Sign In / Up</a>
 </div>
       
            
@@ -148,7 +163,8 @@
 
         <form class="flex-form">
       
-          <input type="search" placeholder="Where do you want to go?">
+          <input type="search" id="validationCustom04" placeholder="What you want to do?">
+          
           
           <label>From</label>
           <input type="date" name="from">
@@ -175,7 +191,7 @@
       </div>
 
 
-    </div>
+    
     <!-- header-wrapper end -->
     
       <!-- main-wrapper -->
@@ -190,8 +206,7 @@
       <!--text-->
       <div class="text">
         <h2>Connect with other people like you and start the travel adventure!</h2>
-        <p>Organize the adventure you always want it, decide where and when and post it on your personal page, or start searching in other people feeds.....Make the dream come true!</p>
-
+       
       </div>
       
       <!--img-->
@@ -240,10 +255,11 @@
       </footer>
     
 
-    <!-- Optional JavaScript -->
+    <!--JavaScript  validation -->
+    <script src="js/main.js"></script>    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    
   </body>

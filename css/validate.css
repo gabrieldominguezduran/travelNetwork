@@ -1,0 +1,23 @@
+input.valid{
+    border-color:  rgba(16, 151, 45, 0.5);
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+input.invalid{
+    border-color: rgba(230, 24, 24, 0.5);
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+input + p{
+    
+    font-size: 0.8em;;
+    color: rgba(143, 45, 45, 0.8);;
+    opacity: 0;
+    height: 0;
+}
+input.invalid + p{
+    opacity: 1;
+    margin: 0;
+}
