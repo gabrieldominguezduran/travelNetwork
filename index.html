@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -27,101 +27,77 @@
 
 
           <!--modal sig in form  -->
-          <!--Modal: Login / Register Form-->
-<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="modalL1RForm" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog cascading-modal" role="document">
     <!--Content-->
     <div class="modal-content">
 
-      <!--Modal cascading tabs-->
-      <div class="modal-c-tabs">
-
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">
-              Sign in</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">
-              Sign up</a>
-          </li>
-        </ul>
-
-        <!-- Tab panels -->
-        <div class="tab-content">
-          <!--Panel 7-->
           <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
 
             <!--Body-->
-         
-              <div class="modal-body mb-4">
-                <div class="md-form form-sm mb-4 mt-4">
-                  <input type="email"  class="form-control form-control-m input" name="email" placeholder="Iam@dog.io">
-                  <p>Not a valid email!!</p>
-                </div>
-               
-  
-                <div class="md-form form-sm mb-2">
-                  <input type="password" class="form-control form-control-m input" name="password" placeholder="********">
-                  <p>Upsss wrong password!</p>
-                </div>
-                <div class="text-center mt-2">
-                  <button type="submit" class="btn btn-info btnIn">Sign in</button>
-                  
-                </div>
-              </div>
-              <!--Footer-->
-              <div class="modal-footer">
-                <div class="options text-center text-md-right mt-1">
-                </div>
-                <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
-              </div>
-  
-            </div>
-          <!--/.Panel 7-->
+            
+            <form id="validForm1"  name="form" method="GET" onsubmit="return validate1(this)" novalidate>
 
-          <!--Panel 8-->
-          <div class="tab-pane fade" id="panel8" role="tabpanel">
+                <div class="modal-body mb-4">
+                  <div class="md-form form-sm mb-4 mt-4">
+  
+                    <input type="email" id="email1" class="form-control form-control-m email input" name="email" placeholder="Email"> 
+                    <p class="invalid">Not a valid email!!</p>
+                    
+                  </div>
+    
+                  <div class="md-form form-sm mb-2">
+                    <input type="password" id="passUser" class="form-control form-control-m password input" name="password"  placeholder="Password">
+                    <p class="invalid">Upsss wrong password! (MIn 5 characters)</p>
+                  </div>
+                  <div class="text-center mt-2">
+                    <input type="submit" class="btn btn-info submit" value="Sign in">  
+                    
+                  </div>
+                </div>
+                <!--Footer-->
+                <div class="modal-footer">
+                  <div class="options text-center text-md-right mt-1">
+                  </div>
+                  <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
+                </div>
+              </form>
+            </div>
+            <!-- /panel Sign In -->
+          </div>
+          <!-- /content -->
+        </div>
+      </div>
+          <!--/.Panel sign In-->
+      <div class="modal fade" id="modalL2RForm" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+          <!--Content-->
+          <div class="modal-content">
+          <!--Panel sign up-->
+          <div class="tab-pane fade show active" id="panel8" role="tabpanel">
 
             <!--Body-->
-            <form class="needs-validation" novalidate>
+            <form id="validForm2" name="form" method="GET" onsubmit="return validate2(this)" novalidate>
             <div class="modal-body">
               <div class="md-form form-sm mb-5 mt-4">
-                
-                <input class="form-control form-control-m email" id="validationCustom01" type="text" name="email" pattern="^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$" placeholder="Email" required>
-                <div class="valid-feedback">
-                  Looking good!!!!
-                </div>
-                <div class="invalid-feedback">
-                  Please choose a valid email.
-                </div>
+                <input id="email2" class="form-control form-control-m email input" type="text" name="email" placeholder="Email">
+                <p class="invalid">Not a valid email!!</p>
               </div>
 
               <div class="md-form form-sm mb-5">
                 
-                <input class="form-control form-control-m pass1" id="validationCustom02" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password" required>
-                <div class="valid-feedback">
-                  Almost there!!!
-                </div>
-                <div class="invalid-feedback">
-                  Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.
-                </div>
+                <input id="pass1" class="form-control form-control-m password input"  type="password" name="password"  placeholder="Password">
+                <p class="invalid">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.!</p>
               </div>
 
               <div class="md-form form-sm mb-5">
                 
-                <input class="form-control form-control-m pass2" id="validationCustom03" type="password" name="password2" placeholder="Repeat password" required>
-                <div class="valid-feedback">
-                  Perfect!!!!
-                </div>
-                <div class="invalid-feedback">
-                  Passwords must match!
-                </div>
+                <input id="pass2" class="form-control form-control-m input" type="password" name="password2" placeholder="Repeat password">
+                <p class="invalid">Passwords must match!!</p>
               </div>
 
               <div class="text-center form-sm mt-2">
-                <button class="btn btn-info signUp">Sign up</button>
+                <input type="submit" class="btn btn-info submit" value="Sign in">   
               </div>
               
             </div>
@@ -131,10 +107,7 @@
               <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
             </div>
           </div>
-          <!--/.Panel 8-->
-        </div>
-
-      </div>
+          <!--/.Panel Sign Up-->
     </div>
     <!--/.Content-->
   </div>
@@ -143,7 +116,8 @@
 <!--Modal: Login / Register Form-->
 
 <div class="text-center mt-4">
-  <a href="" class="btn btn-dark btn-rounded my-2" data-toggle="modal" data-target="#modalLRForm">Sign In / Up</a>
+  <a href="" class="btn btn-dark btn-rounded my-2" data-toggle="modal" data-target="#modalL1RForm">Sign In</a>
+  <a href="" class="btn btn-dark btn-rounded my-2" data-toggle="modal" data-target="#modalL2RForm">Sign Up</a>
 </div>
       
            
@@ -163,7 +137,7 @@
 
         <form class="flex-form">
       
-          <input type="search" id="validationCustom04" placeholder="What you want to do?">
+          <input type="search"  placeholder="What you want to do?">
           
           
           <label>From</label>
