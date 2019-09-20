@@ -1,3 +1,7 @@
 # travelNetwork
 Travel social network mock up.
-Primer proyecto de la It Academy
+HTML5, CSS3, Bootstrap, JS.
+ https://gabrieldominguezduran.github.io/travelNetwork/
+
+
+
