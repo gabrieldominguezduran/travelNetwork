@@ -2,9 +2,7 @@
 
 Travel social network mock up.
 
-## Made with:
-
-HTML5, CSS3, Bootstrap, JS
+Made with: HTML5, CSS3, Bootstrap, JS
 
  ### See it here:
 
