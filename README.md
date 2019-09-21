@@ -1,4 +1,4 @@
-# travelNetwork
+# Travel Network
 
 Travel social network mock up.
 
@@ -8,7 +8,7 @@ HTML5, CSS3, Bootstrap, JS
 
  ### See it here:
 
- [Travel network](https://gabrieldominguezduran.github.io/travelNetwork/)
+ [Travel Network](https://gabrieldominguezduran.github.io/travelNetwork/)
 
 
 
