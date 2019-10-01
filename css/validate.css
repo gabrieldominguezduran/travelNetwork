@@ -28,3 +28,10 @@ input+span {
 input.invalid+span {
 	opacity: 1;
 }
+
+@media(max-width: 1010px) {
+	input+span {
+		color: rgba(209, 29, 29, 1);
+		padding: 5px;
+	}
+}

@@ -15,130 +15,139 @@
 		<script defer src="./js/main.js"></script>
 		<title>Travel Finder</title>
 	</head>
-	<body class="main-wrapper">
-		<nav id="nav" class="nav-bar">
-			<a href="index.html"
-				><img class="logo" src="./img/logo.jpg" alt="Logo"/></a
-			><a class="title" href="index.html">Travel Finder</a>
-			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="travels.html">Travels</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="#footer">Contact</a></li>
-			</ul>
+	<body>
+		<div class="container">
+			<div class="main-wrapper">
+				<nav id="nav" class="nav-bar">
+					<a href="index.html"
+						><img class="logo" src="./img/logo.jpg" alt="Logo"/></a
+					><a class="title" href="index.html">Travel Finder</a>
+					<ul class="nav-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="travels.html">Travels</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#footer">Contact</a></li>
+					</ul>
 
-			<div class="burger">
-				<div class="line1"></div>
-				<div class="line2"></div>
-				<div class="line3"></div>
-			</div>
-		</nav>
-		<div class="hero">
-			<img src="./img/montain.jpg" alt="Montain Photo" />
-		</div>
-		<div class="form">
-			<div class="tab1" id="tab1">
-				<form
-					action="./user.html"
-					id="validForm1"
-					name="form"
-					method="GET"
-					onsubmit="return validate1(this)"
-					class="flex-form"
-					novalidate
-				>
-					<input
-						type="email"
-						id="email1"
-						class="email input"
-						name="email"
-						placeholder="im@dog.me"
-					/>
-					<span class="invalid">
-						Not a valid email!!
-					</span>
-					<input
-						type="password"
-						id="passUser"
-						class="password input"
-						name="password"
-						placeholder="12345"
-					/>
-					<span class="invalid">
-						Upsss wrong password!
-					</span>
-					<input type="submit" class="btn login" value="Login" />
-					<p class="btn2">
-						Not a member?<a
-							class="register"
-							onclick="showTab2(); hideTab1()"
-							>Register!</a
+					<div class="burger">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</div>
+				</nav>
+				<div class="hero">
+					<img src="./img/montain.jpg" alt="Montain Photo" />
+				</div>
+				<div class="form">
+					<div class="tab1" id="tab1">
+						<form
+							action="./user.html"
+							id="validForm1"
+							name="form"
+							method="GET"
+							onsubmit="return validate1(this)"
+							class="flex-form"
+							novalidate
 						>
-					</p>
-				</form>
-			</div>
-			<div class="tab2" id="tab2">
-				<form
-					action="./user.html"
-					id="validForm2"
-					name="form"
-					method="GET"
-					onsubmit="return validate2(this)"
-					class="flex-form"
-					novalidate
-				>
-					<input
-						id="email2"
-						class="email input"
-						type="email"
-						name="email"
-						placeholder="Email"
-					/>
-					<span class="invalid">
-						Not a valid email!!
-					</span>
-					<input
-						id="pass1"
-						class="password input"
-						type="password"
-						name="password"
-						placeholder="Password"
-					/>
-					<span class="invalid">
-						Letters, numbers, upper and lowercase, min 8 characters!
-					</span>
-					<input
-						id="pass2"
-						class="password input"
-						type="password"
-						name="password2"
-						placeholder="Repeat password"
-					/>
-					<span class="invalid">
-						Passwords must match!!
-					</span>
-					<input
-						type="submit"
-						class="btn register"
-						value="Register"
-					/>
-					<p class="btn2">
-						Already a member?<a
-							class="register"
-							onclick="showTab1(); hideTab2()"
-							>Login!</a
+							<input
+								type="email"
+								id="email1"
+								class="email input"
+								name="email"
+								placeholder="im@dog.me"
+							/>
+							<span class="invalid">
+								Not a valid email!!
+							</span>
+							<input
+								type="password"
+								id="passUser"
+								class="password input"
+								name="password"
+								placeholder="12345"
+							/>
+							<span class="invalid">
+								Upsss wrong password!
+							</span>
+							<input
+								type="submit"
+								class="btn login"
+								value="Login"
+							/>
+							<p class="btn2">
+								Not a member?<a
+									class="register"
+									onclick="showTab2(); hideTab1()"
+									>Register!</a
+								>
+							</p>
+						</form>
+					</div>
+					<div class="tab2" id="tab2">
+						<form
+							action="./user.html"
+							id="validForm2"
+							name="form"
+							method="GET"
+							onsubmit="return validate2(this)"
+							class="flex-form"
+							novalidate
 						>
-					</p>
-				</form>
-			</div>
-		</div>
+							<input
+								id="email2"
+								class="email input"
+								type="email"
+								name="email"
+								placeholder="Email"
+							/>
+							<span class="invalid">
+								Not a valid email!!
+							</span>
+							<input
+								id="pass1"
+								class="password input"
+								type="password"
+								name="password"
+								placeholder="Password"
+							/>
+							<span class="invalid">
+								Letters, numbers, upper and lowercase, min 8
+								characters!
+							</span>
+							<input
+								id="pass2"
+								class="password input"
+								type="password"
+								name="password2"
+								placeholder="Repeat password"
+							/>
+							<span class="invalid">
+								Passwords must match!!
+							</span>
+							<input
+								type="submit"
+								class="btn register"
+								value="Register"
+							/>
+							<p class="btn2">
+								Already a member?<a
+									class="register"
+									onclick="showTab1(); hideTab2()"
+									>Login!</a
+								>
+							</p>
+						</form>
+					</div>
+				</div>
 
-		<footer id="footer">
-			<p class="contact">gabrieldd@me.com</p>
-			<p class="social">@gabrielddfoto</p>
-			<a href="#nav"
-				><img class="logo" src="./img/logo.jpg" alt="Logo"
-			/></a>
-		</footer>
+				<footer id="footer">
+					<p class="contact">gabrieldd@me.com</p>
+					<p class="social">@gabrielddfoto</p>
+					<a href="#nav"
+						><img class="logo" src="./img/logo.jpg" alt="Logo"
+					/></a>
+				</footer>
+			</div>
+		</div>
 	</body>
 </html>
