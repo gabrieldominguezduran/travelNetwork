@@ -1,8 +1,8 @@
 # Travel Network
 
-Travel social network mock up.
+Basic Travel Social Network mock up.
 
-Made with: HTML5, CSS3, Bootstrap, JS
+Made with: HTML5, CSS3, JS
 
  ### See it here:
 
