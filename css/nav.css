@@ -68,7 +68,7 @@ li a:hover {
     position: absolute;
     left: 20%;
     top: 0vh;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .nav-links {
@@ -122,5 +122,11 @@ li a:hover {
 
   .toggle .line3 {
     transform: rotate(45deg) translate(-8px, -6px);
+  }
+}
+
+@media(max-width: 400px) {
+  a.title {
+    font-size: 1rem;
   }
 }
