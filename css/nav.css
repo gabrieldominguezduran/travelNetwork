@@ -126,6 +126,10 @@ li a:hover {
 }
 
 @media(max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+
   a.title {
     font-size: 1rem;
   }
