@@ -54,7 +54,7 @@ li a:hover {
 }
 
 @media (max-width: 1010px) {
-  body {
+  html body {
     overflow-x: hidden;
   }
 
@@ -126,7 +126,7 @@ li a:hover {
 }
 
 @media(max-width: 400px) {
-  body {
+  html body {
     overflow-x: hidden;
   }
 
