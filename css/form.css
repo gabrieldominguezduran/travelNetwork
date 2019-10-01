@@ -1,0 +1,131 @@
+/* FORM */
+
+.form {
+  position: relative;
+  top: -50px;
+  margin: 0 10px;
+  font-size: 1em;
+  height: 15%;
+}
+
+.flex-form {
+  display: grid;
+  grid-template-rows: auto;
+
+
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.form input[type="email"] {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-style: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  margin-top: -8%;
+}
+
+.form input[type="password"] {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-style: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 5px;
+  border-radius: 20px;
+}
+
+.btn {
+  background: rgba(12, 12, 12, 0.8);
+  border-style: none;
+  border-radius: 20px;
+  color: white;
+  margin: 15px auto;
+  padding: 15px;
+  font-size: 1em;
+  width: 50%;
+}
+
+.btn2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn2 a {
+  padding: 0 10px;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+
+.tab1 {
+  position: relative;
+  top: 50px;
+  visibility: hidden;
+  margin-top: 10%;
+}
+
+.tab2 {
+  position: relative;
+  top: -150px;
+  visibility: visible;
+}
+
+span {
+  text-align: center;
+  padding: 4px;
+}
+
+@media (min-width: 800px) {
+  .form {
+    top: -20px;
+    margin: 30px;
+    height: 20%;
+  }
+
+  .form input[type="email"] {
+    margin-top: -10%;
+  }
+
+  .btn {
+    width: 50%;
+    justify-self: center;
+  }
+
+  .btn2 {
+    margin-bottom: 5%;
+
+  }
+
+
+}
+
+@media (min-width: 1010px) {
+  .form {
+    background: rgba(48, 46, 46, 0.4);
+    border-radius: 20px;
+    color: whitesmoke;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top: 140px;
+    right: 10%;
+    z-index: 3;
+    margin: 5px 30px;
+    padding: 20px;
+  }
+
+  .form input[type="email"] {
+    margin-top: -13%;
+  }
+
+  .tab2 {
+    margin-top: -10%;
+  }
+}

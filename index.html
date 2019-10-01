@@ -1,240 +1,144 @@
-<!doctype html>
-<html lang="en-us">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- css stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/validate.css">
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-    
-   
-    <title>Travel Finder</title>
-  </head>
-  <body>
- 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/validate.css" />
+		<link rel="stylesheet" href="./css/form.css" />
+		<link rel="stylesheet" href="./css/nav.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+			rel="stylesheet"
+		/>
+		<script defer src="./js/main.js"></script>
+		<title>Travel Finder</title>
+	</head>
+	<body class="main-wrapper">
+		<nav id="nav" class="nav-bar">
+			<a href="index.html"
+				><img class="logo" src="./img/logo.jpg" alt="Logo"/></a
+			><a class="title" href="index.html">Travel Finder</a>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="travels.html">Travels</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#footer">Contact</a></li>
+			</ul>
 
-      <!--nav menu -->
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+		<div class="hero">
+			<img src="./img/montain.jpg" alt="Montain Photo" />
+		</div>
+		<div class="form">
+			<div class="tab1" id="tab1">
+				<form
+					action="./user.html"
+					id="validForm1"
+					name="form"
+					method="GET"
+					onsubmit="return validate1(this)"
+					class="flex-form"
+					novalidate
+				>
+					<input
+						type="email"
+						id="email1"
+						class="email input"
+						name="email"
+						placeholder="im@dog.me"
+					/>
+					<span class="invalid">
+						Not a valid email!!
+					</span>
+					<input
+						type="password"
+						id="passUser"
+						class="password input"
+						name="password"
+						placeholder="12345"
+					/>
+					<span class="invalid">
+						Upsss wrong password!
+					</span>
+					<input type="submit" class="btn login" value="Login" />
+					<p class="btn2">
+						Not a member?<a
+							class="register"
+							onclick="showTab2(); hideTab1()"
+							>Register!</a
+						>
+					</p>
+				</form>
+			</div>
+			<div class="tab2" id="tab2">
+				<form
+					action="./user.html"
+					id="validForm2"
+					name="form"
+					method="GET"
+					onsubmit="return validate2(this)"
+					class="flex-form"
+					novalidate
+				>
+					<input
+						id="email2"
+						class="email input"
+						type="email"
+						name="email"
+						placeholder="Email"
+					/>
+					<span class="invalid">
+						Not a valid email!!
+					</span>
+					<input
+						id="pass1"
+						class="password input"
+						type="password"
+						name="password"
+						placeholder="Password"
+					/>
+					<span class="invalid">
+						Letters, numbers, upper and lowercase, min 8 characters!
+					</span>
+					<input
+						id="pass2"
+						class="password input"
+						type="password"
+						name="password2"
+						placeholder="Repeat password"
+					/>
+					<span class="invalid">
+						Passwords must match!!
+					</span>
+					<input
+						type="submit"
+						class="btn register"
+						value="Register"
+					/>
+					<p class="btn2">
+						Already a member?<a
+							class="register"
+							onclick="showTab1(); hideTab2()"
+							>Login!</a
+						>
+					</p>
+				</form>
+			</div>
+		</div>
 
-        <nav>
-   
-          <h1 class="title">Travel Finder</h1>
-
-
-          <!--modal sig in form  -->
-<div class="modal fade" id="modalL1RForm" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog cascading-modal" role="document">
-    <!--Content-->
-    <div class="modal-content">
-
-          <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
-
-            <!--Body-->
-            
-            <form id="validForm1"  name="form" method="GET" onsubmit="return validate1(this)" novalidate>
-
-                <div class="modal-body mb-4">
-                  <div class="md-form form-sm mb-4 mt-4">
-  
-                    <input type="email" id="email1" class="form-control form-control-m email input" name="email" placeholder="Email"> 
-                    <p class="invalid">Not a valid email!!</p>
-                    
-                  </div>
-    
-                  <div class="md-form form-sm mb-2">
-                    <input type="password" id="passUser" class="form-control form-control-m password input" name="password"  placeholder="Password">
-                    <p class="invalid">Upsss wrong password! (MIn 5 characters)</p>
-                  </div>
-                  <div class="text-center mt-2">
-                    <input type="submit" class="btn btn-info submit" value="Sign in">  
-                    
-                  </div>
-                </div>
-                <!--Footer-->
-                <div class="modal-footer">
-                  <div class="options text-center text-md-right mt-1">
-                  </div>
-                  <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
-                </div>
-              </form>
-            </div>
-            <!-- /panel Sign In -->
-          </div>
-          <!-- /content -->
-        </div>
-      </div>
-          <!--/.Panel sign In-->
-      <div class="modal fade" id="modalL2RForm" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog cascading-modal" role="document">
-          <!--Content-->
-          <div class="modal-content">
-          <!--Panel sign up-->
-          <div class="tab-pane fade show active" id="panel8" role="tabpanel">
-
-            <!--Body-->
-            <form id="validForm2" name="form" method="GET" onsubmit="return validate2(this)" novalidate>
-            <div class="modal-body">
-              <div class="md-form form-sm mb-5 mt-4">
-                <input id="email2" class="form-control form-control-m email input" type="text" name="email" placeholder="Email">
-                <p class="invalid">Not a valid email!!</p>
-              </div>
-
-              <div class="md-form form-sm mb-5">
-                
-                <input id="pass1" class="form-control form-control-m password input"  type="password" name="password"  placeholder="Password">
-                <p class="invalid">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.!</p>
-              </div>
-
-              <div class="md-form form-sm mb-5">
-                
-                <input id="pass2" class="form-control form-control-m input" type="password" name="password2" placeholder="Repeat password">
-                <p class="invalid">Passwords must match!!</p>
-              </div>
-
-              <div class="text-center form-sm mt-2">
-                <input type="submit" class="btn btn-info submit" value="Sign in">   
-              </div>
-              
-            </div>
-          </form>
-            <!--Modal Footer-->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-secondary waves-effect ml-auto" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          <!--/.Panel Sign Up-->
-    </div>
-    <!--/.Content-->
-  </div>
-</div>
-
-<!--Modal: Login / Register Form-->
-
-<div class="text-center mt-4">
-  <a href="" class="btn btn-dark btn-rounded my-2" data-toggle="modal" data-target="#modalL1RForm">Sign In</a>
-  <a href="" class="btn btn-dark btn-rounded my-2" data-toggle="modal" data-target="#modalL2RForm">Sign Up</a>
-</div>
-      
-           
-
-        </nav>
-    
-
-      <!--hero header-->
-     
-        <figure class="hero_img">
-          <img src="img/montain.jpg" alt="montain img">
-        </figure>
-
-
-<!--input form-->
-      <div class="form">
-
-        <form class="flex-form">
-      
-          <input type="search"  placeholder="What you want to do?">
-          
-          
-          <label>From</label>
-          <input type="date" name="from">
-    
-          <label>To</label>
-          <input type="date" name="to">
-
-         
-          <img class="icon" src="img/ppl.svg" alt="ppl icon">
-          <select>
-            
-            <option value="1"></option>
-            <option value="2">1 Person</option>
-            <option value="3">2 Persons</option>
-            <option value="4">3 Persons</option>
-            <option value="5">4 Persons</option>
-            <option value="6">5 Persons</option>
-            <option value="7">More...</option>
-          </select>
-    
-          <input type="submit" value="Search">
-    
-        </form>
-      </div>
-
-
-    
-    <!-- header-wrapper end -->
-    
-      <!-- main-wrapper -->
-      <div class="main-wrapper">
-
- <!--img-->
-      <div class="img-1">
-          <figure>
-              <img src="img/forest.jpg" alt="Forest photo">
-            </figure>
-      </div>
-      <!--text-->
-      <div class="text">
-        <h2>Connect with other people like you and start the travel adventure!</h2>
-       
-      </div>
-      
-      <!--img-->
-      <div class="img-2">
-        <figure>
-          <img src="img/lake.jpg" alt="Lake photo">
-        </figure>
-      </div>
-      <div class="text2">
-        <h2>Check out the last travels that has been organize from people just like you....</h2>
-        
-      </div>
-
-      </div>
-      <!-- main-wrapper end -->
-
-      <div class="gallery">
-          <div class="gallery-item1">
-            <img src="img/balloon.jpg" alt="fly hot air balloon">
-            <p>See the sunrise in Cappadocia on a weekend hot air balloon trip!</p>
-          </div>
-          <div class="gallery-item2">
-              <img src="img/surf.jpg" alt="people on the beach">
-              <p>Learn to surf in Fuerteventura, 5 days special trip!</p>
-          </div>
-          <div class="gallery-item3">
-              <img src="img/skiing.jpg" alt="people skiing">
-              <p>Spend the weekend skiing in the swiss alps!</p>
-          </div>
-          <div class="gallery-item4">
-            <img src="img/desert.jpg" alt="Photo of the desert">
-            <p>Sleeping under the stars in the Sahara desert on this weeklong adventure!</p>
-        </div>
-
-      </div>
-      
-     
-
-      <!--footer-->
-      <footer>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-        <p>TF</p>
-      </footer>
-    
-
-    <!--JavaScript  validation -->
-    <script src="js/main.js"></script>    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   
-  </body>
+		<footer id="footer">
+			<p class="contact">gabrieldd@me.com</p>
+			<p class="social">@gabrielddfoto</p>
+			<a href="#nav"
+				><img class="logo" src="./img/logo.jpg" alt="Logo"
+			/></a>
+		</footer>
+	</body>
 </html>
